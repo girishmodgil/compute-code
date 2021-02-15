@@ -12,12 +12,12 @@
 
 * __estimate_pi__ is a Monte Carlo simulation example
 
-* __graphs__ is a depth_first search algorithm
-  Sample Output:
-  Current path is:  0-->2
-  Current path is:  0-->2-->3
-  Current path is:  0-->2-->3-->4
-  Current path is:  0-->2-->3-->5
-  Current path is:  0-->2-->3-->1
-  Current path is:  0-->2-->4
-  Depth First Search:  0-->2-->3-->5
+* __graphs__ is a depth_first search algorithm<br />
+  Sample Output:<br />
+  Current path is:  0-->2<br />
+  Current path is:  0-->2-->3<br />
+  Current path is:  0-->2-->3-->4<br />
+  Current path is:  0-->2-->3-->5<br />
+  Current path is:  0-->2-->3-->1<br />
+  Current path is:  0-->2-->4<br />
+  Depth First Search:  0-->2-->3-->5<br />
