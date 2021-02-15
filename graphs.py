@@ -88,6 +88,42 @@ class graph(digraph):
         digraph.addedge(self, revrse)
 
 
+#-----------------------------------------------------------------------------
+#-----------------------------------------------------------------------------
+#-------------------------Depth first search----------------------------------
+
+#Using the recursive process as Guttag explained
+#This function chooses one child of Start and a child of that and so on
+#until it encounters the node 'end' or a node with no children
+def depth_first(graph, start, end, path, shortest, toPrint = False):
+    '''Start and end returned values are the nodes'''
+    path = path + [start]
+    if toPrint:
+        print('Current path is: ', printway(path))
+    if start == end:
+        return path
+    
+    for node in graph.childof(start):
+        if node not in path: #take only the new ones
+            if shortest == None or len(path) < len(shortest):
+                newpath = depth_first(graph, node, end, path, shortest, toPrint)
+                if newpath != None:
+                    shortest = newpath
+    return shortest
+
+def shortestpath(graph, start, end, toPrint = False):
+    #pass it an empty list since path is unknown
+    #initialize shortest path to None 
+    return depth_first(graph, start, end, [], None, toPrint) 
+
+def printway(path):
+    result=''
+    for j in range(len(path)):
+        result = result + str(path[j])
+        if j != len(path) - 1:
+            result = result + '-->'
+    return result
+
 
 def testgraph():
     
@@ -115,7 +151,8 @@ def testgraph():
     g.addedge(edge(nodes[3], nodes[1]))
     g.addedge(edge(nodes[4], nodes[0]))
     
+    sp = shortestpath(g, nodes[0], nodes[5], toPrint=True)
 
-    #print(nodes)    
+    print('Depth First Search: ', printway(sp))    
 
 testgraph()
