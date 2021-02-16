@@ -116,6 +116,7 @@ def shortestpath(graph, start, end, toPrint = False):
     #initialize shortest path to None 
     return depth_first(graph, start, end, [], None, toPrint) 
 
+#Print the result of DFS
 def printway(path):
     result=''
     for j in range(len(path)):
@@ -123,6 +124,34 @@ def printway(path):
         if j != len(path) - 1:
             result = result + '-->'
     return result
+
+#-----------------------------------------------------------------------------
+#-----------------------------------------------------------------------------
+#-------------------------Breadth first search----------------------------------
+
+#First visit the start node's children. If that doesn't lead to the 'end' node, 
+#visit the children and move like that. Does not need recursive implementation
+
+def breadth_first(graph, start, end, toPrint = False):
+    ''' Assumes a digraph'''
+    initpath = [start]
+    pathstor = [initpath]
+    if toPrint:
+        print('Current breadth first path: ', printway(path))
+    while len(pathstor) != 0:
+        tmp_path =pathstor.pop(0)
+        print('Current breadth first path: ', printway(tmp_path))
+        lastnode = tmp_path[-1]
+        if lastnode == end:
+            return tmp_path
+        for n in graph.childof(lastnode):
+            if n not in tmp_path:
+                new = tmp_path + [n]
+                pathstor.append(new)
+    return None            
+
+
+
 
 
 def testgraph():
@@ -153,6 +182,10 @@ def testgraph():
     
     sp = shortestpath(g, nodes[0], nodes[5], toPrint=True)
 
-    print('Depth First Search: ', printway(sp))    
+    print('Depth First Search result: ', printway(sp))
+
+    sp = breadth_first(g,nodes[0], nodes[5] )
+
+    print('Breadth First Search result: ', printway(sp))    
 
 testgraph()
