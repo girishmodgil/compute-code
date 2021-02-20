@@ -34,3 +34,5 @@
   Current breadth first path:  0-->2-->3-->4<br />
   Current breadth first path:  0-->2-->3-->5<br />
   Breadth First Search result:  0-->2-->3-->5<br />
+
+* __Simple_Bayes_Marketing__ is a Python notebook showing how to estimate posteriors using observed data 
