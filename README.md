@@ -21,4 +21,16 @@
   Current path is:  0-->2-->3-->1<br />
   Current path is:  0-->2-->4<br />
   Depth First Search:  0-->2-->3-->5<br />
-  and the *breadth_first search* algorithm
+  and<br />
+  the *breadth_first search* algorithm<br />
+  Current breadth first path:  0<br />
+  Current breadth first path:  0-->1<br />
+  Current breadth first path:  0-->2<br />
+  Current breadth first path:  0-->1-->2<br />
+  Current breadth first path:  0-->2-->3<br />
+  Current breadth first path:  0-->2-->4<br />
+  Current breadth first path:  0-->1-->2-->3<br />
+  Current breadth first path:  0-->1-->2-->4<br />
+  Current breadth first path:  0-->2-->3-->4<br />
+  Current breadth first path:  0-->2-->3-->5<br />
+  Breadth First Search result:  0-->2-->3-->5<br />
