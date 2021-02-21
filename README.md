@@ -35,6 +35,6 @@
   Current breadth first path:  0-->2-->3-->5<br />
   Breadth First Search result:  0-->2-->3-->5<br />
 
-* __Simple_Bayes_Marketing__ is a Python notebook showing how to estimate posteriors using observed data. 
+* __Simple_Bayes_Marketing__ is a Python notebook showing how to estimate posteriors using observed data.
 
-* __fast_fourier_transforms__ is my favorite subject from years working in signal processing. Thought I would do a basic intro to show how to best use FFT.
+* __fast_fourier_transforms__ is my favorite subject from years past working in signal processing. Thought I would do a basic intro to show how to best use FFT.
