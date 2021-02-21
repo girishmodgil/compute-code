@@ -6,7 +6,7 @@
 
 * __greedy__ is an implementation of the greedy optimization algorithm
 
-* __compute_into__ is a notebook showing basic recursion and root finding
+* __compute_intro__ is a notebook showing basic recursion and root finding
 
 * The _Data wrangling_ folder contains Beer Data CSV from Stanford. I've shown some basic wrangling techniques that might be useful to business analysts.
 
