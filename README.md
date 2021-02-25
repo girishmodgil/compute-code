@@ -38,3 +38,5 @@
 * __Simple_Bayes_Marketing__ is a Python notebook showing how to estimate posteriors using observed data.
 
 * __fast_fourier_transforms__ is my favorite subject from years past working in signal processing. Thought I would do a basic intro to show how to best use FFT.
+
+* __infection_modeling__ is a folder containing an example of S-I-R infection modeling and data wrangling using publicly available data to draw some conclusions about cases and deaths from Covid 19. 
