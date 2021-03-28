@@ -42,3 +42,5 @@
 * __infection_modeling__ is a folder containing an example of S-I-R infection modeling and data wrangling using publicly available data to draw some conclusions about cases and deaths from Covid 19.
 
 * __eigenvalues_and_clustering__ is a work in progress notebook to go over some concepts for eigenvalues and k-means clustering
+
+* __causal_impact__ is an example of bayesian structural time series modeling.
