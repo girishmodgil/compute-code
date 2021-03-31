@@ -44,3 +44,5 @@
 * __eigenvalues_and_clustering__ is a work in progress notebook to go over some concepts for eigenvalues and k-means clustering
 
 * __causal_impact__ is an example of bayesian structural time series modeling.
+
+* __time_series_using_prophet__ shows the Facebook AI Prophet library. Very small demo
